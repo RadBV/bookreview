@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./BookCard.scss"
 
 
 
@@ -8,15 +9,15 @@ const BookCard = ({book}) => {
         
 <div className="bookCard" data-testid="bookCard" >
     <Link to={`book/${book?.id}`}>
-        <div className="grid" >
+        <div className="twoColumns" >
 
-            {/* <img className="studentCard__image" src={student?.pic} /> */}
+            <img className="bookCard__image" src={book?.cover_img} />
 
             <div className="bookCard__info">
                 
-                <div className="bookCard__title">
+                <h3 className="bookCard__title">
                     {book?.title}
-                </div>
+                </h3>
 
                 <div className="bookCard__author">
                     by {book?.author}

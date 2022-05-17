@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from "react";
 import BookCard from "../bookCard/BookCard";
+import "./BookList.scss"
 
 const BookList = () => {
     const [books, setBooks] = useState([]);
@@ -16,7 +17,7 @@ const BookList = () => {
     },[]);
 
     return(
-        <div className="bookList">
+        <div className="bookList" data-testid="bookList">
             {books.map((book, index)=>{
                 return(
                     <BookCard book={book} index={index}/>
