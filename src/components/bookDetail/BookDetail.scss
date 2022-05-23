@@ -1,0 +1,48 @@
+.bookDetail {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    // display: flex;
+
+    &__topBar{
+        margin-bottom: 10px;
+    }
+    &__image {
+        margin-left: 20%;
+        height: 400px;
+        float: left;
+    }
+    
+    &__infoSection {
+        margin-left:30px ;
+        margin-top: 10px;
+    }
+
+    &__title {
+        margin: auto;
+    }
+
+    &__author {
+        margin-top: 10px;
+        color: gray;
+    }
+
+    &__pages{
+        margin-top: 10px;
+    }
+    &__chapters{
+        margin-top: 10px;
+    }
+    &__genre{
+        margin-top: 10px;
+    }
+    &__description{
+        margin-top: 10px;
+    }
+    
+    
+}
+
+.twoColumns {
+    display: flex;
+}
