@@ -1,11 +1,16 @@
 import React from 'react';
-import {  Link } from "react-router-dom";
+import {BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import BookForm from '../bookForm/BookForm';
+import "./NavBar.scss"
 
 const Navbar= () => {
     return(
-        <div>
-            <Link to= "/addBook">Add Book</Link>
-        </div>
+        <nav className='navBar'>
+            
+            <Link to= "/addBook" className='navBar__addBook'>Add Book</Link>
+           
+            
+        </nav>
     )
 }
 export default Navbar

@@ -1,20 +1,8 @@
-import React,{useState,useEffect} from "react";
+import React from "react";
 import BookCard from "../bookCard/BookCard";
 import "./BookList.scss"
 
-const BookList = () => {
-    const [books, setBooks] = useState([]);
-    useEffect(()=>{
-
-        let url = "https://bookreview-backend.herokuapp.com/books"
-        
-        fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            setBooks(data);
-        
-        });
-    },[]);
+const BookList = ({books}) => {
 
     return(
         <div className="bookList" data-testid="bookList">
